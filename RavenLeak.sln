@@ -5,16 +5,35 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RavenLeak", "RavenLeak\RavenLeak.csproj", "{A33BC90D-21AC-41A5-9B56-B1AF7EE2C082}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sparrow", "..\ravendb\src\Sparrow\Sparrow.csproj", "{F4D57C24-F432-4E9B-8605-75CAECD8FB73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Raven.Client", "..\ravendb\src\Raven.Client\Raven.Client.csproj", "{745E7822-4A56-4133-A4FE-ACDFE6640B6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Validate|Any CPU = Validate|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A33BC90D-21AC-41A5-9B56-B1AF7EE2C082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A33BC90D-21AC-41A5-9B56-B1AF7EE2C082}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A33BC90D-21AC-41A5-9B56-B1AF7EE2C082}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A33BC90D-21AC-41A5-9B56-B1AF7EE2C082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A33BC90D-21AC-41A5-9B56-B1AF7EE2C082}.Validate|Any CPU.ActiveCfg = Release|Any CPU
+		{A33BC90D-21AC-41A5-9B56-B1AF7EE2C082}.Validate|Any CPU.Build.0 = Release|Any CPU
+		{F4D57C24-F432-4E9B-8605-75CAECD8FB73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D57C24-F432-4E9B-8605-75CAECD8FB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D57C24-F432-4E9B-8605-75CAECD8FB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D57C24-F432-4E9B-8605-75CAECD8FB73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D57C24-F432-4E9B-8605-75CAECD8FB73}.Validate|Any CPU.ActiveCfg = Validate|Any CPU
+		{F4D57C24-F432-4E9B-8605-75CAECD8FB73}.Validate|Any CPU.Build.0 = Validate|Any CPU
+		{745E7822-4A56-4133-A4FE-ACDFE6640B6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{745E7822-4A56-4133-A4FE-ACDFE6640B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{745E7822-4A56-4133-A4FE-ACDFE6640B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{745E7822-4A56-4133-A4FE-ACDFE6640B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{745E7822-4A56-4133-A4FE-ACDFE6640B6F}.Validate|Any CPU.ActiveCfg = Validate|Any CPU
+		{745E7822-4A56-4133-A4FE-ACDFE6640B6F}.Validate|Any CPU.Build.0 = Validate|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

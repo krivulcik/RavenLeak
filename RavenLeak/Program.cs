@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Raven.Client.Documents;
 
 namespace RavenLeak
 {
@@ -10,12 +6,24 @@ namespace RavenLeak
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            // database needs to exist, no data necessary
+            var documentStore = new DocumentStore
+            {
+                Urls = new[] { "http://live-test.ravendb.net" },
+                Database = "RavenLeak",
+            };
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+            documentStore.Initialize();
+
+            using (var session = documentStore.OpenSession())
+            {
+                var company = session.Load<Company>("companies/91-A");
+            }
         }
+    }
+
+    class Company
+    {
+        public string Id { get; set; }
     }
 }
